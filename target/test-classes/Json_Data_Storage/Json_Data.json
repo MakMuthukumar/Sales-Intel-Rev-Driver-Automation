@@ -1,0 +1,26 @@
+{
+  "Login_Details" : {
+    "Username" : "muthu.kumar+2@astegic.com",
+    "Password" : "Astegic1!"
+  },
+  "ContactName_Details" : {
+    "FirstName" : "John",
+    "LastName" : "Abrams",
+    "Email" : "patrick_adorante@dell.com",
+    "FirstName1" : "Cory",
+    "LastName1" : "Andresen",
+    "Email1" : "cory.andresen@dell.com"
+  },
+  "LinkedIn_Login_Details" : {
+    "Username" : "salesinteltest@gmail.com",
+    "Password" : "Salesintel@12345678@",
+    "Sales Navigator Username" : "shoaib.mohammad@salesintel.io",
+    "Sales Navigator Password" : "Astegic1!"
+  },
+  "Company_Name" : "Adobe",
+  "Job Description":"IT Head",
+  "Salesforce_Login_Details" : {
+    "Username" : "priyanka@university.com",
+    "Password" : "Astegic@12345678@12"
+    }
+}
