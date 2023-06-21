@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="807.651927">
+    <testcase classname="Validate application details in LinkedIn website and Salesforce website using US Region" name="To validate application contact's Name in LinkedIn website using US Region" time="109.253156">
+        <system-out><![CDATA[Given Launch the url with US Region For LinkedIn............................passed
+When Click on Chrome Extensions.............................................passed
+And Click on Pin From Chrome Extensions.....................................passed
+And Click on RevDriver by SalesIntel........................................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+And Enter the UserName with US Region For LinkedIn..........................passed
+And Enter the Password with US Region For LinkedIn..........................passed
+And Click on Login CTA with US Region For LinkedIn..........................passed
+And Click on Filter option with US Region For LinkedIn......................passed
+And Click on Contacts Name Button with US Region For LinkedIn...............passed
+And Enter the Firstname with US Region For LinkedIn.........................passed
+And Enter the Lastname with US Region For LinkedIn..........................passed
+And Click on Search Button with US Region For LinkedIn......................passed
+And Click On LinkedIn Link Contact with US Region...........................passed
+And Switch To LinkedIn Website..............................................passed
+And Click On Sign In Link In LinkedIn Website...............................passed
+And Enter the Email Address In LinkedIn Website.............................passed
+And Enter the Password In LinkedIn Website..................................passed
+And Click on Agree&Join Button..............................................passed
+Then I Close the current window.............................................passed
+And Switch To LinkedIn Website To SalesIntel Website........................passed
+Then I Wait short period for Page Load......................................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+And Click On LinkedIn Link Contact with US Region In SalesIntel Website.....passed
+And Switch To LinkedIn Website To Specific Contact Details..................passed
+Then I Wait Till My Network text to be displayed............................passed
+When Click on Chrome Extensions.............................................passed
+And Click on Updated RevDriver by SalesIntel................................passed
+Then I Wait Till Specific Contact Details to be displayed...................passed
+Then I Validated Contact Details from Sales Intel Site and LinkedIn Site....passed
+Then I Close the current window.............................................passed
+And Switch To LinkedIn Website To SalesIntel Website........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Company Details as Adobe in LinkedIn website and Salesforce website using US Region" name="To validate application Company Details as Adobe in LinkedIn website using US Region" time="47.141357">
+        <system-out><![CDATA[Then I Wait short period for Page Load......................................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+When Click on Filter option with US Region For LinkedIn.....................passed
+And Click On Clear Button with US Region For LinkedIn.......................passed
+And Enter the Firstname with US Region For LinkedIn.........................passed
+And Enter the Lastname with US Region For LinkedIn..........................passed
+And Click on Search Button with US Region For LinkedIn......................passed
+And Click On LinkedIn Link Contact with US Region...........................passed
+And Switch To LinkedIn Website..............................................passed
+And Enter the Company name as Adobe in Search Field.........................passed
+And Click On View Page with US Region In SalesIntel Website.................passed
+When Click on Chrome Extensions.............................................passed
+And Click on Adobe Updated RevDriver by SalesIntel..........................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate Adobe Text For US Region In SalesIntel Website................passed
+And Get the name From SalesIntel Website In US Region.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" name="To validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" time="38.101758">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Enter the Job Description Details as IT Head  in Search Field...........passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+And Get the Customer name From SalesIntel Website...........................passed
+And Switch From Frame To Webpage in Salesforce Website Using US Region......passed
+And Enter the Company name as Adobe in Search Field.........................passed
+And Click On View Page with US Region In SalesIntel Website.................passed
+Then I Wait short period for Page Load......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce login with US Region" name="To validate application Salesforce login with US Region" time="154.338615">
+        <system-out><![CDATA[Given Open the New Tap and Launch the Salesforce Website Using US Region....passed
+When Enter the Username in Salesforce Website Using US Region...............passed
+And Enter the Password in Salesforce Website Using US Region................passed
+And Click on Remember me checkbox in Salesforce Website Using US Region.....passed
+And Click on login button after entering the credentials in Salesforce Website Using US Region.passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+Then I Wait for Page Load...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Export the contact using Salesforce website with US Region" name="To validate application Export the contact using Salesforce website with US Region" time="78.88902">
+        <system-out><![CDATA[When Switch To LinkedIn Website.............................................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+And Click on Setting menu in Salesforce Website Using US Region.............passed
+And Click on Integrations Settingsin Salesforce Website Using US Region.....passed
+And Click on Salesforce Setting in Salesforce Website Using US Region.......passed
+And Click on Already logged in Salesforce account in Salesforce Website Using US Region.passed
+And Click on Logout in Salesforce Website Using US Region...................passed
+And Click on OK in Salesforce Website Using US Region.......................passed
+And Wait for Specific contact in Salesforce Website Using US Region.........passed
+And Click on Setting menu in Salesforce Website Using US Region.............passed
+And Click on Integrations Settingsin Salesforce Website Using US Region.....passed
+And Click on Salesforce Setting in Salesforce Website Using US Region.......passed
+And Click on Already logged in Salesforce account in Salesforce Website Using US Region.passed
+And Click on Cancel in Salesforce Website Using US Region...................passed
+And Click on Select the Specific check box with US Region For LinkedIn......passed
+And Click on Export Button with US Region For LinkedIn......................passed
+And Click on Salesforce field with US Region For LinkedIn...................passed
+And Click on Export as Contact with US Region For LinkedIn..................passed
+And Click on Next Button in Contact Owner optional Page with US Region For LinkedIn.passed
+And Click on Next Button in Campaigns optional Page with US Region For LinkedIn.passed
+And Click on Next Button in Duplicates Page with US Region For LinkedIn.....passed
+And Click on Close Button in Export Succeeded Page with US Region For LinkedIn.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Exported contact displayed in Salesforce Website with US Region" name="To validate application Exported contact displayed in Salesforce Website with US Region" time="53.940635">
+        <system-out><![CDATA[When Switch To Salesforce Website...........................................passed
+And Click on Leads Button in Salesforce Website Using US Region.............passed
+And Click on Close Icon, If appears in Salesforce Website Using US Region...passed
+And Enter the Exported data in search box in Salesforce Website Using US Region.passed
+Then Validated the Exported data in Salesforce Website Using US Region......passed
+When Click on Chrome Extensions.............................................passed
+And Click on Salesforce Updated RevDriver by SalesIntel.....................passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the Exported contact displayed in Salesforce Website..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" name="To validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" time="30.241078">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]&quot;}&#10;  (Session info: chrome=114.0.5735.134)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d6e17ed58072fd42622692effa011cdc&#10;*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)&#13;&#10;&#9;at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)&#13;&#10;&#9;at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)&#13;&#10;"><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+Then Validated the Company details in Salesforce Website Using US Region....failed
+And Switch To Frame with US Region For LinkedIn.............................skipped
+Then Validated the Company details in Salesforce Rev Driver Using US Region.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e17ed58072fd42622692effa011cdc
+*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)
+	at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" name="To validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" time="13.36555">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Enter the data as IT Head in search box in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+And Get the Customer name From SalesIntel Website...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce HomePage with US Region" name="To validate application Salesforce HomePage with US Region" time="21.322552">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Home Button in Salesforce Website Using US Region..............passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Home page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Accounts Page with US Region" name="To validate application Salesforce Accounts Page with US Region" time="26.295189">
+        <system-out><![CDATA[When Click on Account Button in Salesforce Website Using US Region..........passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Account page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Account Page-My Accounts Dropdown in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Account page-My Accounts Dropdown in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Contacts Page with US Region" name="To validate application Salesforce Contacts Page with US Region" time="25.54858">
+        <system-out><![CDATA[When Click on Contacts Button in Salesforce Website Using US Region.........passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Contacts page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Contacts Page-My Accounts Dropdown in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Contacts page-Recently Viewed Contacts Dropdown in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Leads Page with US Region" name="To validate application Salesforce Leads Page with US Region" time="20.299398">
+        <system-out><![CDATA[When Click on Leads Button in Salesforce Website Using US Region............passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Leads page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Leads Page-All Open Leads Dropdown in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Leads page-All Open Leads Dropdown in Salesforce Website Using US Region.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-HomePage with US Region" name="To validate application Salesforce Switch to Lightning Experience-HomePage with US Region" time="33.984765">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Switch to Lightning Experience Label in Salesforce Website Using US Region.passed
+And Click on Switch to Lightning Experience-Home label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Home page in Salesforce Website Using US Region.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" time="37.363876">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+When Click on Switch to Lightning Experience-Accounts label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Accounts page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Switch to Lightning Experience-My Accounts label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Accounts page-My Accounts in Salesforce Website Using US Region.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" time="30.14119">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+When Click on Switch to Lightning Experience-Contacts label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Contacts page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Switch to Lightning Experience-Recently Viewed Contacts label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Contacts page-Recently Viewed Contacts in Salesforce Website Using US Region.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" time="28.889136">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+When Click on Switch to Lightning Experience-Leads label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Leads page in Salesforce Website Using US Region.passed
+When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+And Click on Switch to Lightning Experience-All Open Leads label in Salesforce Website Using US Region.passed
+And Switch To Frame with US Region For LinkedIn.............................passed
+Then Validate the customer name from Leads page-All Open Leads in Salesforce Website Using US Region.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate application Sales Navigator Sign Out with Existing Details with US Region" name="To validate application Sales Navigator with US Region" time="58.536072">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+When Switch To LinkedIn Website.............................................passed
+And Click on Chrome Extensions..............................................passed
+And Click on Salesforce Updated RevDriver by SalesIntel.....................passed
+And Click On Me Button in LinkedIn Website..................................passed
+And Click On Sign Out Button in LinkedIn Website............................passed
+]]></system-out>
+    </testcase>
+</testsuite>

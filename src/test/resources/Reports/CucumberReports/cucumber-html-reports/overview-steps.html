@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SalesIntel RevDriver Automation Testing</td>
+      <td>21 Jun 2023, 15:38</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">Before_And_After.afterExecutedClass(Scenario)</td>
+              <td>17</td>
+              <td class="duration" data-value="8992052">0.008</td>
+              <td class="duration" data-value="8992052">0.144</td>
+              <td class="duration" data-value="152864897">0.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Before_And_After.beforeExecutedClass(Scenario)</td>
+              <td>17</td>
+              <td class="duration" data-value="743741">0.000</td>
+              <td class="duration" data-value="743741">0.003</td>
+              <td class="duration" data-value="12643601">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_Clear_Button_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="124841701">0.124</td>
+              <td class="duration" data-value="124841701">0.124</td>
+              <td class="duration" data-value="124841701">0.124</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_LinkedIn_Link_Contact_with_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="176040200">0.176</td>
+              <td class="duration" data-value="176040200">0.188</td>
+              <td class="duration" data-value="352080400">0.352</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_LinkedIn_Link_Contact_with_US_Region_In_SalesIntel_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="187589000">0.187</td>
+              <td class="duration" data-value="187589000">0.187</td>
+              <td class="duration" data-value="187589000">0.187</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_Me_Button_in_LinkedIn_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="2206763100">2.206</td>
+              <td class="duration" data-value="2206763100">2.206</td>
+              <td class="duration" data-value="2206763100">2.206</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_Sign_In_Link_In_LinkedIn_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="3058727399">3.058</td>
+              <td class="duration" data-value="3058727399">3.058</td>
+              <td class="duration" data-value="3058727399">3.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_Sign_Out_Button_in_LinkedIn_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="32087063701">32.087</td>
+              <td class="duration" data-value="32087063701">32.087</td>
+              <td class="duration" data-value="32087063701">32.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_On_View_Page_with_US_Region_In_SalesIntel_Website()</td>
+              <td>2</td>
+              <td class="duration" data-value="5922547750">5.922</td>
+              <td class="duration" data-value="5922547750">7.239</td>
+              <td class="duration" data-value="11845095500">11.845</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Account_Button_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2739123300">2.739</td>
+              <td class="duration" data-value="2739123300">2.739</td>
+              <td class="duration" data-value="2739123300">2.739</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Account_Page_My_Accounts_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2170447100">2.170</td>
+              <td class="duration" data-value="2170447100">2.170</td>
+              <td class="duration" data-value="2170447100">2.170</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Adobe_Updated_RevDriver_by_SalesIntel()</td>
+              <td>1</td>
+              <td class="duration" data-value="6162220000">6.162</td>
+              <td class="duration" data-value="6162220000">6.162</td>
+              <td class="duration" data-value="6162220000">6.162</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Agree_Join_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="10222087701">10.222</td>
+              <td class="duration" data-value="10222087701">10.222</td>
+              <td class="duration" data-value="10222087701">10.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Already_logged_in_Salesforce_account_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="4026925849">4.026</td>
+              <td class="duration" data-value="4026925849">4.028</td>
+              <td class="duration" data-value="8053851699">8.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Cancel_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="6841963100">6.841</td>
+              <td class="duration" data-value="6841963100">6.841</td>
+              <td class="duration" data-value="6841963100">6.841</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Chrome_Extensions()</td>
+              <td>5</td>
+              <td class="duration" data-value="11173249659">11.173</td>
+              <td class="duration" data-value="11173249659">11.569</td>
+              <td class="duration" data-value="55866248299">55.866</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Close_Button_in_Export_Succeeded_Page_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2202261399">2.202</td>
+              <td class="duration" data-value="2202261399">2.202</td>
+              <td class="duration" data-value="2202261399">2.202</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Close_Icon_If_appears_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="20230398400">20.230</td>
+              <td class="duration" data-value="20230398400">20.230</td>
+              <td class="duration" data-value="20230398400">20.230</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Contacts_Button_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2895993899">2.895</td>
+              <td class="duration" data-value="2895993899">2.895</td>
+              <td class="duration" data-value="2895993899">2.895</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Contacts_Email_Button_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="144900500">0.144</td>
+              <td class="duration" data-value="144900500">0.144</td>
+              <td class="duration" data-value="144900500">0.144</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Contacts_Page_My_Accounts_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2219891600">2.219</td>
+              <td class="duration" data-value="2219891600">2.219</td>
+              <td class="duration" data-value="2219891600">2.219</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Export_Button_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="159785701">0.159</td>
+              <td class="duration" data-value="159785701">0.159</td>
+              <td class="duration" data-value="159785701">0.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Export_as_Contact_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="8220136199">8.220</td>
+              <td class="duration" data-value="8220136199">8.220</td>
+              <td class="duration" data-value="8220136199">8.220</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Filter_option_with_US_Region_For_LinkedIn()</td>
+              <td>2</td>
+              <td class="duration" data-value="166156250">0.166</td>
+              <td class="duration" data-value="166156250">0.182</td>
+              <td class="duration" data-value="332312500">0.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Home_Button_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="6130419000">6.130</td>
+              <td class="duration" data-value="6130419000">6.130</td>
+              <td class="duration" data-value="6130419000">6.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Integrations_Settingsin_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="2167522250">2.167</td>
+              <td class="duration" data-value="2167522250">2.193</td>
+              <td class="duration" data-value="4335044501">4.335</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Leads_Button_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="3352973150">3.352</td>
+              <td class="duration" data-value="3352973150">4.015</td>
+              <td class="duration" data-value="6705946301">6.705</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Leads_Page_All_Open_Leads_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2251187399">2.251</td>
+              <td class="duration" data-value="2251187399">2.251</td>
+              <td class="duration" data-value="2251187399">2.251</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Login_CTA_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="7518223200">7.518</td>
+              <td class="duration" data-value="7518223200">7.518</td>
+              <td class="duration" data-value="7518223200">7.518</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Logout_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2083168700">2.083</td>
+              <td class="duration" data-value="2083168700">2.083</td>
+              <td class="duration" data-value="2083168700">2.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Next_Button_in_Campaigns_optional_Page_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2173765800">2.173</td>
+              <td class="duration" data-value="2173765800">2.173</td>
+              <td class="duration" data-value="2173765800">2.173</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Next_Button_in_Contact_Owner_optional_Page_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2210082400">2.210</td>
+              <td class="duration" data-value="2210082400">2.210</td>
+              <td class="duration" data-value="2210082400">2.210</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Next_Button_in_Duplicates_Page_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="20019423700">20.019</td>
+              <td class="duration" data-value="20019423700">20.019</td>
+              <td class="duration" data-value="20019423700">20.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_OK_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2779559601">2.779</td>
+              <td class="duration" data-value="2779559601">2.779</td>
+              <td class="duration" data-value="2779559601">2.779</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Pin_From_Chrome_Extensions()</td>
+              <td>1</td>
+              <td class="duration" data-value="5989747901">5.989</td>
+              <td class="duration" data-value="5989747901">5.989</td>
+              <td class="duration" data-value="5989747901">5.989</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Remember_me_checkbox_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2116062700">2.116</td>
+              <td class="duration" data-value="2116062700">2.116</td>
+              <td class="duration" data-value="2116062700">2.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_RevDriver_by_SalesIntel()</td>
+              <td>1</td>
+              <td class="duration" data-value="6142245800">6.142</td>
+              <td class="duration" data-value="6142245800">6.142</td>
+              <td class="duration" data-value="6142245800">6.142</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Saleesforce_field_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2178065600">2.178</td>
+              <td class="duration" data-value="2178065600">2.178</td>
+              <td class="duration" data-value="2178065600">2.178</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Salesforce_Setting_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="2166373050">2.166</td>
+              <td class="duration" data-value="2166373050">2.188</td>
+              <td class="duration" data-value="4332746101">4.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Salesforce_Updated_RevDriver_by_SalesIntel()</td>
+              <td>2</td>
+              <td class="duration" data-value="8144323099">8.144</td>
+              <td class="duration" data-value="8144323099">8.190</td>
+              <td class="duration" data-value="16288646198">16.288</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Search_Button_with_US_Region_For_LinkedIn()</td>
+              <td>2</td>
+              <td class="duration" data-value="2259949500">2.259</td>
+              <td class="duration" data-value="2259949500">2.262</td>
+              <td class="duration" data-value="4519899000">4.519</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Select_the_Specific_check_box_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="2723948600">2.723</td>
+              <td class="duration" data-value="2723948600">2.723</td>
+              <td class="duration" data-value="2723948600">2.723</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Setting_menu_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="2186053000">2.186</td>
+              <td class="duration" data-value="2186053000">2.203</td>
+              <td class="duration" data-value="4372106000">4.372</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Accounts_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2227714899">2.227</td>
+              <td class="duration" data-value="2227714899">2.227</td>
+              <td class="duration" data-value="2227714899">2.227</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_All_Open_Leads_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="4759741300">4.759</td>
+              <td class="duration" data-value="4759741300">4.759</td>
+              <td class="duration" data-value="4759741300">4.759</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Contacts_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2206091300">2.206</td>
+              <td class="duration" data-value="2206091300">2.206</td>
+              <td class="duration" data-value="2206091300">2.206</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Home_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="5349473601">5.349</td>
+              <td class="duration" data-value="5349473601">5.349</td>
+              <td class="duration" data-value="5349473601">5.349</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="14189071400">14.189</td>
+              <td class="duration" data-value="14189071400">14.189</td>
+              <td class="duration" data-value="14189071400">14.189</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Leads_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="2148224700">2.148</td>
+              <td class="duration" data-value="2148224700">2.148</td>
+              <td class="duration" data-value="2148224700">2.148</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_My_Accounts_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="4919647200">4.919</td>
+              <td class="duration" data-value="4919647200">4.919</td>
+              <td class="duration" data-value="4919647200">4.919</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Switch_to_Lightning_Experience_Recently_Viewed_Contacts_label_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="4826110600">4.826</td>
+              <td class="duration" data-value="4826110600">4.826</td>
+              <td class="duration" data-value="4826110600">4.826</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_Updated_RevDriver_by_SalesIntel()</td>
+              <td>1</td>
+              <td class="duration" data-value="6013942601">6.013</td>
+              <td class="duration" data-value="6013942601">6.013</td>
+              <td class="duration" data-value="6013942601">6.013</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.click_on_login_button_after_entering_the_credentials_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="22643467600">22.643</td>
+              <td class="duration" data-value="22643467600">22.643</td>
+              <td class="duration" data-value="22643467600">22.643</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Company_name_as_Adobe_in_Search_Field()</td>
+              <td>2</td>
+              <td class="duration" data-value="3437418400">3.437</td>
+              <td class="duration" data-value="3437418400">4.447</td>
+              <td class="duration" data-value="6874836800">6.874</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Email_Address_In_LinkedIn_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="331267701">0.331</td>
+              <td class="duration" data-value="331267701">0.331</td>
+              <td class="duration" data-value="331267701">0.331</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Exported_data_in_search_box_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="4125496000">4.125</td>
+              <td class="duration" data-value="4125496000">4.125</td>
+              <td class="duration" data-value="4125496000">4.125</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Firstname_with_US_Region_For_LinkedIn()</td>
+              <td>2</td>
+              <td class="duration" data-value="107305500">0.107</td>
+              <td class="duration" data-value="107305500">0.112</td>
+              <td class="duration" data-value="214611000">0.214</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Job_Description_Details_as_IT_Head_in_Search_Field()</td>
+              <td>1</td>
+              <td class="duration" data-value="2240122100">2.240</td>
+              <td class="duration" data-value="2240122100">2.240</td>
+              <td class="duration" data-value="2240122100">2.240</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Lastname_with_US_Region_For_LinkedIn()</td>
+              <td>2</td>
+              <td class="duration" data-value="112156649">0.112</td>
+              <td class="duration" data-value="112156649">0.127</td>
+              <td class="duration" data-value="224313299">0.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Password_In_LinkedIn_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="130149999">0.130</td>
+              <td class="duration" data-value="130149999">0.130</td>
+              <td class="duration" data-value="130149999">0.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Password_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="94951201">0.094</td>
+              <td class="duration" data-value="94951201">0.094</td>
+              <td class="duration" data-value="94951201">0.094</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Password_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="70261301">0.070</td>
+              <td class="duration" data-value="70261301">0.070</td>
+              <td class="duration" data-value="70261301">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_UserName_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="134676100">0.134</td>
+              <td class="duration" data-value="134676100">0.134</td>
+              <td class="duration" data-value="134676100">0.134</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_Username_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="477267100">0.477</td>
+              <td class="duration" data-value="477267100">0.477</td>
+              <td class="duration" data-value="477267100">0.477</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.enter_the_data_as_IT_Head_in_search_box_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="3086962600">3.086</td>
+              <td class="duration" data-value="3086962600">3.086</td>
+              <td class="duration" data-value="3086962600">3.086</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.get_the_Customer_name_From_SalesIntel_Website()</td>
+              <td>2</td>
+              <td class="duration" data-value="4441319699">4.441</td>
+              <td class="duration" data-value="4441319699">8.706</td>
+              <td class="duration" data-value="8882639399">8.882</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.get_the_name_From_SalesIntel_Website_In_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="44911500">0.044</td>
+              <td class="duration" data-value="44911500">0.044</td>
+              <td class="duration" data-value="44911500">0.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Close_the_current_window()</td>
+              <td>2</td>
+              <td class="duration" data-value="3016449799">3.016</td>
+              <td class="duration" data-value="3016449799">3.016</td>
+              <td class="duration" data-value="6032899599">6.032</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Validated_Contact_Details_from_Sales_Intel_Site_and_LinkedIn_Site()</td>
+              <td>1</td>
+              <td class="duration" data-value="56248599">0.056</td>
+              <td class="duration" data-value="56248599">0.056</td>
+              <td class="duration" data-value="56248599">0.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Wait_Till_My_Network_text_to_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="2847446501">2.847</td>
+              <td class="duration" data-value="2847446501">2.847</td>
+              <td class="duration" data-value="2847446501">2.847</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Wait_Till_Specific_Contact_Details_to_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="3528831099">3.528</td>
+              <td class="duration" data-value="3528831099">3.528</td>
+              <td class="duration" data-value="3528831099">3.528</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Wait_for_Page_Load()</td>
+              <td>12</td>
+              <td class="duration" data-value="10008084916">10.008</td>
+              <td class="duration" data-value="10008084916">10.015</td>
+              <td class="duration" data-value="120097019000">2:0.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.i_Wait_short_period_for_Page_Load()</td>
+              <td>3</td>
+              <td class="duration" data-value="5006255800">5.006</td>
+              <td class="duration" data-value="5006255800">5.011</td>
+              <td class="duration" data-value="15018767401">15.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.launch_the_url_with_US_Region_For_LinkedIn()</td>
+              <td>1</td>
+              <td class="duration" data-value="15951189800">15.951</td>
+              <td class="duration" data-value="15951189800">15.951</td>
+              <td class="duration" data-value="15951189800">15.951</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.open_the_New_Tap_and_Launch_the_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="8886354300">8.886</td>
+              <td class="duration" data-value="8886354300">8.886</td>
+              <td class="duration" data-value="8886354300">8.886</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_From_Frame_To_Webpage_in_Salesforce_Website_Using_US_Region()</td>
+              <td>19</td>
+              <td class="duration" data-value="5017029879">5.017</td>
+              <td class="duration" data-value="5017029879">5.023</td>
+              <td class="duration" data-value="95323567702">1:35.323</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_To_Frame_with_US_Region_For_LinkedIn()</td>
+              <td>23</td>
+              <td class="duration" data-value="4851047026">4.851</td>
+              <td class="duration" data-value="4851047026">5.122</td>
+              <td class="duration" data-value="111574081599">1:51.574</td>
+              <td class="failed">95.65%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_To_LinkedIn_Website()</td>
+              <td>4</td>
+              <td class="duration" data-value="34732974">0.034</td>
+              <td class="duration" data-value="34732974">0.055</td>
+              <td class="duration" data-value="138931897">0.138</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_To_LinkedIn_Website_To_SalesIntel_Website()</td>
+              <td>2</td>
+              <td class="duration" data-value="29418849">0.029</td>
+              <td class="duration" data-value="29418849">0.033</td>
+              <td class="duration" data-value="58837699">0.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_To_LinkedIn_Website_To_Specific_Contact_Details()</td>
+              <td>1</td>
+              <td class="duration" data-value="19142900">0.019</td>
+              <td class="duration" data-value="19142900">0.019</td>
+              <td class="duration" data-value="19142900">0.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.switch_To_Salesforce_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="17171700">0.017</td>
+              <td class="duration" data-value="17171700">0.017</td>
+              <td class="duration" data-value="17171700">0.017</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_Adobe_Text_For_US_Region_In_SalesIntel_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="95597900">0.095</td>
+              <td class="duration" data-value="95597900">0.095</td>
+              <td class="duration" data-value="95597900">0.095</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_Exported_contact_displayed_in_Salesforce_Website()</td>
+              <td>1</td>
+              <td class="duration" data-value="1169988200">1.169</td>
+              <td class="duration" data-value="1169988200">1.169</td>
+              <td class="duration" data-value="1169988200">1.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Account_page_My_Accounts_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="69540100">0.069</td>
+              <td class="duration" data-value="69540100">0.069</td>
+              <td class="duration" data-value="69540100">0.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Account_page_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="1170649500">1.170</td>
+              <td class="duration" data-value="1170649500">1.170</td>
+              <td class="duration" data-value="1170649500">1.170</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Accounts_page_My_Accounts_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="5270259600">5.270</td>
+              <td class="duration" data-value="5270259600">5.270</td>
+              <td class="duration" data-value="5270259600">5.270</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Accounts_page_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="4737472499">4.737</td>
+              <td class="duration" data-value="4737472499">4.737</td>
+              <td class="duration" data-value="4737472499">4.737</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Contacts_page_Recently_Viewed_Contacts_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="90514699">0.090</td>
+              <td class="duration" data-value="90514699">0.090</td>
+              <td class="duration" data-value="90514699">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Contacts_page_Recently_Viewed_Contacts_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="1295052300">1.295</td>
+              <td class="duration" data-value="1295052300">1.295</td>
+              <td class="duration" data-value="1295052300">1.295</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Contacts_page_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="872757549">0.872</td>
+              <td class="duration" data-value="872757549">1.662</td>
+              <td class="duration" data-value="1745515099">1.745</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Home_page_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="2235455199">2.235</td>
+              <td class="duration" data-value="2235455199">4.360</td>
+              <td class="duration" data-value="4470910399">4.470</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Leads_page_All_Open_Leads_Dropdown_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="77192900">0.077</td>
+              <td class="duration" data-value="77192900">0.077</td>
+              <td class="duration" data-value="77192900">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Leads_page_All_Open_Leads_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="885633100">0.885</td>
+              <td class="duration" data-value="885633100">0.885</td>
+              <td class="duration" data-value="885633100">0.885</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validate_the_customer_name_from_Leads_page_in_Salesforce_Website_Using_US_Region()</td>
+              <td>2</td>
+              <td class="duration" data-value="506261350">0.506</td>
+              <td class="duration" data-value="506261350">0.945</td>
+              <td class="duration" data-value="1012522701">1.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validated_the_Company_details_in_Salesforce_Rev_Driver_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="809000">0.000</td>
+              <td class="duration" data-value="809000">0.000</td>
+              <td class="duration" data-value="809000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="25060397700">25.060</td>
+              <td class="duration" data-value="25060397700">25.060</td>
+              <td class="duration" data-value="25060397700">25.060</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.validated_the_Exported_data_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="48839500">0.048</td>
+              <td class="duration" data-value="48839500">0.048</td>
+              <td class="duration" data-value="48839500">0.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Steps.wait_for_Specific_contact_in_Salesforce_Website_Using_US_Region()</td>
+              <td>1</td>
+              <td class="duration" data-value="1069321100">1.069</td>
+              <td class="duration" data-value="1069321100">1.069</td>
+              <td class="duration" data-value="1069321100">1.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>98</td>
+            <td>209</td>
+            <td class="duration">3.863</td>
+            <td class="duration">2:0.097</td>
+            <td class="duration">13:27.396</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

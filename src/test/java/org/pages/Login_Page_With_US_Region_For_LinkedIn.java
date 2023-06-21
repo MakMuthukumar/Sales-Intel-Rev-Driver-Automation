@@ -243,7 +243,7 @@ public class Login_Page_With_US_Region_For_LinkedIn extends Global {
 	@FindBy(xpath = "//span[@class='ni-company']//a[text()='Adobe']")
 	private WebElement salesforce_Rev_Driver_Adobe_Company_Name;
 	
-	@FindBy(xpath = "(//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]")
+	@FindBy(xpath = "(//span[@class='global-nav__primary-link-text'])[1]")
 	private WebElement linkedIn_Website_Me_Button;
 	
 	@FindBy(xpath = "//*[contains(text(),'Sign Out')]")

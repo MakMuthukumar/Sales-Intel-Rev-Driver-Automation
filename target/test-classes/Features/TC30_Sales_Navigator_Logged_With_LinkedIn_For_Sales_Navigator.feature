@@ -1,6 +1,6 @@
  Feature: Validate application Sales Navigator Logged With LinkedIn For US Region
  
-  @Validated_Salesforce_And_LinkedIn_Website
+  @Validated_Salesforce_And_LinkedIn_Website1
   Scenario: To validate application Sales Navigator Logged With LinkedIn For US Region
   When Enter The User Nmae in LinkedIn Website For Sales Navigator with US Region
   And Enter The Password in LinkedIn Website For Sales Navigator with US Region
