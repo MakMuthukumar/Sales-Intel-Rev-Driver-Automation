@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="848.255066">
-    <testcase classname="Validate application details in LinkedIn website and Salesforce website using US Region" name="To validate application contact's Name in LinkedIn website using US Region" time="109.110244">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="807.651927">
+    <testcase classname="Validate application details in LinkedIn website and Salesforce website using US Region" name="To validate application contact's Name in LinkedIn website using US Region" time="109.253156">
         <system-out><![CDATA[Given Launch the url with US Region For LinkedIn............................passed
 When Click on Chrome Extensions.............................................passed
 And Click on Pin From Chrome Extensions.....................................passed
@@ -35,7 +35,7 @@ Then I Close the current window.............................................pass
 And Switch To LinkedIn Website To SalesIntel Website........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Company Details as Adobe in LinkedIn website and Salesforce website using US Region" name="To validate application Company Details as Adobe in LinkedIn website using US Region" time="48.401775">
+    <testcase classname="Validate application Company Details as Adobe in LinkedIn website and Salesforce website using US Region" name="To validate application Company Details as Adobe in LinkedIn website using US Region" time="47.141357">
         <system-out><![CDATA[Then I Wait short period for Page Load......................................passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 When Click on Filter option with US Region For LinkedIn.....................passed
@@ -54,7 +54,7 @@ Then Validate Adobe Text For US Region In SalesIntel Website................pass
 And Get the name From SalesIntel Website In US Region.......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" name="To validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" time="38.013889">
+    <testcase classname="Validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" name="To validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region" time="38.101758">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 And Enter the Job Description Details as IT Head  in Search Field...........passed
 And Switch To Frame with US Region For LinkedIn.............................passed
@@ -65,7 +65,7 @@ And Click On View Page with US Region In SalesIntel Website.................pass
 Then I Wait short period for Page Load......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce login with US Region" name="To validate application Salesforce login with US Region" time="148.354889">
+    <testcase classname="Validate application Salesforce login with US Region" name="To validate application Salesforce login with US Region" time="154.338615">
         <system-out><![CDATA[Given Open the New Tap and Launch the Salesforce Website Using US Region....passed
 When Enter the Username in Salesforce Website Using US Region...............passed
 And Enter the Password in Salesforce Website Using US Region................passed
@@ -85,7 +85,7 @@ Then I Wait for Page Load...................................................pass
 Then I Wait for Page Load...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Export the contact using Salesforce website with US Region" name="To validate application Export the contact using Salesforce website with US Region" time="78.692754">
+    <testcase classname="Validate application Export the contact using Salesforce website with US Region" name="To validate application Export the contact using Salesforce website with US Region" time="78.88902">
         <system-out><![CDATA[When Switch To LinkedIn Website.............................................passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 And Click on Setting menu in Salesforce Website Using US Region.............passed
@@ -110,7 +110,7 @@ And Click on Next Button in Duplicates Page with US Region For LinkedIn.....pass
 And Click on Close Button in Export Succeeded Page with US Region For LinkedIn.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Exported contact displayed in Salesforce Website with US Region" name="To validate application Exported contact displayed in Salesforce Website with US Region" time="56.803873">
+    <testcase classname="Validate application Exported contact displayed in Salesforce Website with US Region" name="To validate application Exported contact displayed in Salesforce Website with US Region" time="53.940635">
         <system-out><![CDATA[When Switch To Salesforce Website...........................................passed
 And Click on Leads Button in Salesforce Website Using US Region.............passed
 And Click on Close Icon, If appears in Salesforce Website Using US Region...passed
@@ -122,8 +122,8 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the Exported contact displayed in Salesforce Website..........passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" name="To validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" time="30.299141">
-        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]&quot;}&#10;  (Session info: chrome=114.0.5735.134)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 24604de9c4f81dd7a2d665a6b2003f39&#10;*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)&#13;&#10;&#9;at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1816)&#13;&#10;&#9;at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)&#13;&#10;"><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+    <testcase classname="Validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" name="To validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region" time="30.241078">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]&quot;}&#10;  (Session info: chrome=114.0.5735.134)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d6e17ed58072fd42622692effa011cdc&#10;*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)&#13;&#10;&#9;at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)&#13;&#10;&#9;at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)&#13;&#10;"><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 Then Validated the Company details in Salesforce Website Using US Region....failed
 And Switch To Frame with US Region For LinkedIn.............................skipped
 Then Validated the Company details in Salesforce Rev Driver Using US Region.skipped
@@ -135,8 +135,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 24604de9c4f81dd7a2d665a6b2003f39
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6e17ed58072fd42622692effa011cdc
 *** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -156,18 +156,18 @@ Session ID: 24604de9c4f81dd7a2d665a6b2003f39
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1816)
+	at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)
 	at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" name="To validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" time="13.637769">
+    <testcase classname="Validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" name="To validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region" time="13.36555">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 And Enter the data as IT Head in search box in Salesforce Website Using US Region.passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 And Get the Customer name From SalesIntel Website...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce HomePage with US Region" name="To validate application Salesforce HomePage with US Region" time="21.261632">
+    <testcase classname="Validate application Salesforce HomePage with US Region" name="To validate application Salesforce HomePage with US Region" time="21.322552">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 And Click on Home Button in Salesforce Website Using US Region..............passed
 And Switch To Frame with US Region For LinkedIn.............................passed
@@ -175,7 +175,7 @@ Then Validate the customer name from Home page in Salesforce Website Using US Re
 When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Accounts Page with US Region" name="To validate application Salesforce Accounts Page with US Region" time="26.900818">
+    <testcase classname="Validate application Salesforce Accounts Page with US Region" name="To validate application Salesforce Accounts Page with US Region" time="26.295189">
         <system-out><![CDATA[When Click on Account Button in Salesforce Website Using US Region..........passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 Then Validate the customer name from Account page in Salesforce Website Using US Region.passed
@@ -186,7 +186,7 @@ Then Validate the customer name from Account page-My Accounts Dropdown in Salesf
 When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Contacts Page with US Region" name="To validate application Salesforce Contacts Page with US Region" time="25.638062">
+    <testcase classname="Validate application Salesforce Contacts Page with US Region" name="To validate application Salesforce Contacts Page with US Region" time="25.54858">
         <system-out><![CDATA[When Click on Contacts Button in Salesforce Website Using US Region.........passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 Then Validate the customer name from Contacts page in Salesforce Website Using US Region.passed
@@ -197,7 +197,7 @@ Then Validate the customer name from Contacts page-Recently Viewed Contacts Drop
 When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Leads Page with US Region" name="To validate application Salesforce Leads Page with US Region" time="20.23061">
+    <testcase classname="Validate application Salesforce Leads Page with US Region" name="To validate application Salesforce Leads Page with US Region" time="20.299398">
         <system-out><![CDATA[When Click on Leads Button in Salesforce Website Using US Region............passed
 And Switch To Frame with US Region For LinkedIn.............................passed
 Then Validate the customer name from Leads page in Salesforce Website Using US Region.passed
@@ -207,7 +207,7 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the customer name from Leads page-All Open Leads Dropdown in Salesforce Website Using US Region.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Switch to Lightning Experience-HomePage with US Region" name="To validate application Salesforce Switch to Lightning Experience-HomePage with US Region" time="34.358293">
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-HomePage with US Region" name="To validate application Salesforce Switch to Lightning Experience-HomePage with US Region" time="33.984765">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 And Click on Switch to Lightning Experience Label in Salesforce Website Using US Region.passed
 And Click on Switch to Lightning Experience-Home label in Salesforce Website Using US Region.passed
@@ -215,7 +215,7 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the customer name from Home page in Salesforce Website Using US Region.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" time="32.073361">
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region" time="37.363876">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 When Click on Switch to Lightning Experience-Accounts label in Salesforce Website Using US Region.passed
 And Switch To Frame with US Region For LinkedIn.............................passed
@@ -226,7 +226,7 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the customer name from Accounts page-My Accounts in Salesforce Website Using US Region.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" time="30.122622">
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region" time="30.14119">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 When Click on Switch to Lightning Experience-Contacts label in Salesforce Website Using US Region.passed
 And Switch To Frame with US Region For LinkedIn.............................passed
@@ -237,7 +237,7 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the customer name from Contacts page-Recently Viewed Contacts in Salesforce Website Using US Region.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" time="28.803733">
+    <testcase classname="Validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" name="To validate application Salesforce Switch to Lightning Experience-Leads Page with US Region" time="28.889136">
         <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 When Click on Switch to Lightning Experience-Leads label in Salesforce Website Using US Region.passed
 And Switch To Frame with US Region For LinkedIn.............................passed
@@ -248,95 +248,13 @@ And Switch To Frame with US Region For LinkedIn.............................pass
 Then Validate the customer name from Leads page-All Open Leads in Salesforce Website Using US Region.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application Sales Navigator Sign Out with Existing Details with US Region" name="To validate application Sales Navigator with US Region" time="105.551601">
-        <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]' (tried for 60 second(s) with 500 milliseconds interval)&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#13;&#10;&#9;at org.stepdefinition.Steps.click_On_Me_Button_in_LinkedIn_Website(Steps.java:1875)&#13;&#10;&#9;at ✽.Click On Me Button in LinkedIn Website(file:src/test/resources/Features/TC29_Sales_Navigator_Sign_Out_With_Existing_Details.feature:9)&#13;&#10;Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]&quot;}&#10;  (Session info: chrome=114.0.5735.134)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 24604de9c4f81dd7a2d665a6b2003f39&#10;*** Element info: {Using=xpath, value=(//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;&#10;&#9;at org.stepdefinition.Steps.click_On_Me_Button_in_LinkedIn_Website(Steps.java:1875)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:567)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:46)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:567)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)&#13;&#10;&#9;at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)&#13;&#10;&#9;at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)&#13;&#10;"><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
+    <testcase classname="Validate application Sales Navigator Sign Out with Existing Details with US Region" name="To validate application Sales Navigator with US Region" time="58.536072">
+        <system-out><![CDATA[When Switch From Frame To Webpage in Salesforce Website Using US Region.....passed
 When Switch To LinkedIn Website.............................................passed
 And Click on Chrome Extensions..............................................passed
 And Click on Salesforce Updated RevDriver by SalesIntel.....................passed
-And Click On Me Button in LinkedIn Website..................................failed
-And Click On Sign Out Button in LinkedIn Website............................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]' (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at org.stepdefinition.Steps.click_On_Me_Button_in_LinkedIn_Website(Steps.java:1875)
-	at ✽.Click On Me Button in LinkedIn Website(file:src/test/resources/Features/TC29_Sales_Navigator_Sign_Out_With_Existing_Details.feature:9)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 24604de9c4f81dd7a2d665a6b2003f39
-*** Element info: {Using=xpath, value=(//span[@class='global-nav__primary-link-text']//following::li-icon[@type='caret'])[1]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at org.stepdefinition.Steps.click_On_Me_Button_in_LinkedIn_Website(Steps.java:1875)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
-	at jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]></failure>
+And Click On Me Button in LinkedIn Website..................................passed
+And Click On Sign Out Button in LinkedIn Website............................passed
+]]></system-out>
     </testcase>
 </testsuite>

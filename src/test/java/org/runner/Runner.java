@@ -16,8 +16,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src\\test\\resources\\Features\\", glue = { "org.stepdefinition",
 		"org.runner" }, dryRun = false, monochrome = true, tags = {
 				"@Validated_Salesforce_And_LinkedIn_Website" }, plugin = {
-						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "pretty",
-						"io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm", "html:src\\test\\resources\\Reports\\HTML",
+						"com.aventstack.extentreports.cucumber.ExtentCucumberAdapter:", "pretty",
+						"io.qameta.allure.cucumber3jvm.AllureCucumber4Jvm", "html:src\\test\\resources\\Reports\\HTML",
 						"json:src\\test\\resources\\Reports\\Json\\cucumber.json",
 						"junit:src\\test\\resources\\Reports\\XML\\cucumber.xml" })
 public class Runner extends AbstractTestNGCucumberTests {

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 21 15:24:44 IST 2023</td>
+<td>Started on:</td><td>Sun Jun 25 16:12:24 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>809 seconds (809764 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (96 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,163 +68,103 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region", "Validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(@class,&apos;dataCell&apos;)]//following::a[contains(text(),&apos;Adobe&apos;)]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NHCLPT520&apos;, ip: &apos;172.18.160.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d6e17ed58072fd42622692effa011cdc
-*** Element info: {Using=xpath, value=//th[contains(@class,&apos;dataCell&apos;)]//following::a[contains(text(),&apos;Adobe&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)
-	at ?.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace651676429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace651676429'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(@class,&apos;dataCell&apos;)]//following::a[contains(text(),&apos;Adobe&apos;)]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NHCLPT520&apos;, ip: &apos;172.18.160.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d6e17ed58072fd42622692effa011cdc
-*** Element info: {Using=xpath, value=//th[contains(@class,&apos;dataCell&apos;)]//following::a[contains(text(),&apos;Adobe&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)
-	at ?.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)
+<td title='org.runner.Runner.setUpClass()'><b>setUpClass</b><br>Test class: org.runner.Runner</td>
+<td><div><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:181)
+	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:166)
+	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:223)
+	at cucumber.runtime.formatter.PluginFactory.isStepDefinitionReporterName(PluginFactory.java:206)
+	at io.cucumber.core.options.RuntimeOptionsBuilder$ParsedPluginData.addPluginName(RuntimeOptionsBuilder.java:213)
+	at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:61)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:96)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:51)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:57)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:174)
+	... 35 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace840083671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840083671'><pre>cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:181)
+	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:166)
+	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:223)
+	at cucumber.runtime.formatter.PluginFactory.isStepDefinitionReporterName(PluginFactory.java:206)
+	at io.cucumber.core.options.RuntimeOptionsBuilder$ParsedPluginData.addPluginName(RuntimeOptionsBuilder.java:213)
+	at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:61)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:96)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:51)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:57)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:174)
+	... 35 more
 </pre></div></td>
-<td>30</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application contact's Name in LinkedIn website using US Region", "Validate application details in LinkedIn website and Salesforce website using US Region"</td>
-<td></td>
-<td>109</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Company Details as Adobe in LinkedIn website using US Region", "Validate application Company Details as Adobe in LinkedIn website and Salesforce website using US Region"</td>
-<td></td>
-<td>47</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region", "Validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region"</td>
-<td></td>
-<td>38</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce login with US Region", "Validate application Salesforce login with US Region"</td>
-<td></td>
-<td>154</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Export the contact using Salesforce website with US Region", "Validate application Export the contact using Salesforce website with US Region"</td>
-<td></td>
-<td>78</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Exported contact displayed in Salesforce Website with US Region", "Validate application Exported contact displayed in Salesforce Website with US Region"</td>
-<td></td>
-<td>53</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region", "Validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region"</td>
-<td></td>
-<td>13</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce HomePage with US Region", "Validate application Salesforce HomePage with US Region"</td>
-<td></td>
-<td>21</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Accounts Page with US Region", "Validate application Salesforce Accounts Page with US Region"</td>
-<td></td>
-<td>26</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Contacts Page with US Region", "Validate application Salesforce Contacts Page with US Region"</td>
-<td></td>
-<td>25</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Leads Page with US Region", "Validate application Salesforce Leads Page with US Region"</td>
-<td></td>
-<td>20</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Switch to Lightning Experience-HomePage with US Region", "Validate application Salesforce Switch to Lightning Experience-HomePage with US Region"</td>
-<td></td>
-<td>33</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region", "Validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region"</td>
-<td></td>
-<td>37</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region", "Validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region"</td>
-<td></td>
-<td>30</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Salesforce Switch to Lightning Experience-Leads Page with US Region", "Validate application Salesforce Switch to Lightning Experience-Leads Page with US Region"</td>
-<td></td>
-<td>28</td>
-<td>org.runner.Runner@7ae42ce3</td></tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate application Sales Navigator with US Region", "Validate application Sales Navigator Sign Out with Existing Details with US Region"</td>
-<td></td>
-<td>58</td>
+<td>0</td>
 <td>org.runner.Runner@7ae42ce3</td></tr>
 </table><p>
 </body>

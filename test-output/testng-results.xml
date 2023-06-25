@@ -1,345 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-21T09:54:44Z" name="Default suite" finished-at="2023-06-21T10:08:13Z" duration-ms="809764">
+  <suite started-at="2023-06-25T10:42:24Z" name="Default suite" finished-at="2023-06-25T10:42:24Z" duration-ms="96">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-21T09:54:44Z" name="Default test" finished-at="2023-06-21T10:08:13Z" duration-ms="809764">
+    <test started-at="2023-06-25T10:42:24Z" name="Default test" finished-at="2023-06-25T10:42:24Z" duration-ms="96">
       <class name="org.runner.Runner">
-        <test-method is-config="true" signature="allureReportCleanup()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:54:39Z" name="allureReportCleanup" finished-at="2023-06-21T09:54:44Z" duration-ms="4047" status="PASS">
+        <test-method is-config="true" signature="allureReportCleanup()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-25T10:42:20Z" name="allureReportCleanup" finished-at="2023-06-25T10:42:24Z" duration-ms="4127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allureReportCleanup -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:54:44Z" name="setUpClass" finished-at="2023-06-21T09:54:44Z" duration-ms="829" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-25T10:42:24Z" name="setUpClass" finished-at="2023-06-25T10:42:24Z" duration-ms="52" status="FAIL">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[Couldn't load plugin class: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: Couldn't load plugin class: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:181)
+at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:166)
+at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:223)
+at cucumber.runtime.formatter.PluginFactory.isStepDefinitionReporterName(PluginFactory.java:206)
+at io.cucumber.core.options.RuntimeOptionsBuilder$ParsedPluginData.addPluginName(RuntimeOptionsBuilder.java:213)
+at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:61)
+at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:96)
+at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:51)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:57)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.ExtentCucumberAdapter
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:174)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:54:44Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T09:56:34Z" duration-ms="109558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application contact's Name in LinkedIn website using US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application details in LinkedIn website and Salesforce website using US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:56:34Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T09:57:21Z" duration-ms="47149" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Company Details as Adobe in LinkedIn website using US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Company Details as Adobe in LinkedIn website and Salesforce website using US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:57:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T09:57:59Z" duration-ms="38108" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Job Description Details as IT Head in Adobe in LinkedIn website using US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T09:57:59Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:00:34Z" duration-ms="154352" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce login with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce login with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:00:34Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:01:53Z" duration-ms="78901" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Export the contact using Salesforce website with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Export the contact using Salesforce website with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:01:53Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:02:46Z" duration-ms="53945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Exported contact displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Exported contact displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:02:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:03:17Z" duration-ms="30250" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Exported contact along with company details-Adobe displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d6e17ed58072fd42622692effa011cdc
-*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NHCLPT520', ip: '172.18.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d6e17ed58072fd42622692effa011cdc
-*** Element info: {Using=xpath, value=//th[contains(@class,'dataCell')]//following::a[contains(text(),'Adobe')]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-at org.stepdefinition.Steps.validated_the_Company_details_in_Salesforce_Website_Using_US_Region(Steps.java:1817)
-at ✽.Validated the Company details in Salesforce Website Using US Region(file:src/test/resources/Features/TC19_LinkedIn_And_Salesforce_Exported_Contact_Details_And_Company_Details_Adobe_Displayed.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:03:17Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:03:30Z" duration-ms="13371" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Job Description Details as IT Head is displayed in Salesforce Website with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:03:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:03:51Z" duration-ms="21329" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce HomePage with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce HomePage with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:03:51Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:04:18Z" duration-ms="26307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Accounts Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Accounts Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:04:18Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:04:43Z" duration-ms="25560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Contacts Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Contacts Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:04:43Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:05:04Z" duration-ms="20304" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Leads Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Leads Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:05:04Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:05:38Z" duration-ms="33987" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Switch to Lightning Experience-HomePage with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Switch to Lightning Experience-HomePage with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:05:38Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:06:15Z" duration-ms="37366" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Switch to Lightning Experience-Accounts Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:06:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:06:45Z" duration-ms="30143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Switch to Lightning Experience-Contacts Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:06:45Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:07:14Z" duration-ms="28897" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Salesforce Switch to Lightning Experience-Leads Page with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Salesforce Switch to Lightning Experience-Leads Page with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:07:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T10:08:13Z" duration-ms="58542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To validate application Sales Navigator with US Region"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate application Sales Navigator Sign Out with Existing Details with US Region"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:08:13Z" name="tearDownClass" finished-at="2023-06-21T10:08:13Z" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-25T10:42:24Z" name="tearDownClass" finished-at="2023-06-25T10:42:24Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-21T10:08:13Z" name="cucumberReportGenerate" finished-at="2023-06-21T10:08:15Z" duration-ms="1246" status="PASS">
+        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@7ae42ce3]" started-at="2023-06-25T10:42:24Z" name="cucumberReportGenerate" finished-at="2023-06-25T10:42:27Z" duration-ms="3008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cucumberReportGenerate -->
